@@ -1,4 +1,11 @@
+import 'package:firebase_services/firebase_services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'app.dart';
+import 'core/firebase/firebase_options.dart';
+import 'core/providers/provider_observer.dart';
+import 'core/utils/styles/styles.dart';
 
 /*
 Code with ❤️
@@ -11,23 +18,16 @@ Code with ❤️
 └──────────────────────────┘
 */
 
-void main() => runApp(const MyAwesomeApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-class MyAwesomeApp extends StatelessWidget {
-  const MyAwesomeApp({super.key});
+  await Styles.setPreferredOrientations();
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Quiz App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Quiz App'),
-        ),
-        body: const Center(
-          child: Text('Quiz App'),
-        ),
-      ),
-    );
-  }
+  runApp(
+    ProviderScope(
+      observers: [AppProviderObserver()],
+      child: const MyAwesomeApp(),
+    ),
+  );
 }

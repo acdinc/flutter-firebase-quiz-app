@@ -1,9 +1,10 @@
 <!-- ABOUT THE PROJECT -->
 # Quiz App
 
-[![version](https://img.shields.io/badge/version-0.0.1-orange)](https://github.com/acdinc/flutter_firebase_quiz_app/tree/main/lib)
-[![flutter](https://img.shields.io/badge/flutter-3.3.4-blue)](https://flutter.dev/)
-[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
+![version][version_badge]
+[![flutter][flutter_badge]][flutter_link]
+[![style: very good analysis][vga_badge]][vga_link]
+![license: MIT][license_badge]
 
 A new end-to-end Flutter project with firebase and riverpod
 
@@ -30,9 +31,9 @@ A new end-to-end Flutter project with firebase and riverpod
 
 ## Progress
 
-* [ ] Add Firebase to the project
-* [ ] Create Firebase Services module and add auth service
-* [ ] Auth feature
+* [x] Add Firebase to the project
+* [x] Create Firebase Services module and add auth service
+* [x] Auth feature
 * [ ] Home, Topic, Quiz features
 * [ ] Settings feature
 * [ ] App navigation
@@ -43,3 +44,13 @@ A new end-to-end Flutter project with firebase and riverpod
 ## Contact
 
 Ali Dinc - [@acdinc](https://twitter.com/acdinc) - alcmdnc@gmail.com
+
+[version_badge]: https://img.shields.io/badge/version-0.0.1-orange
+
+[flutter_badge]: https://img.shields.io/badge/flutter-3.3.4-blue
+[flutter_link]: https://flutter.dev/
+
+[vga_badge]:https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[vga_link]: https://pub.dev/packages/very_good_analysis
+
+[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
