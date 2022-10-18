@@ -25,9 +25,3 @@ extension MediaQueryExtension on BuildContext {
 
   bool get isKeyboardOpen => mediaQuery.viewInsets.bottom != 0;
 }
-
-extension WidgetExtension on Widget {
-  Widget expanded([int flex = 1]) {
-    return Expanded(flex: flex, child: this);
-  }
-}

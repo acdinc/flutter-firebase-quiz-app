@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/third_party/custom_snackbar.dart';
-import '../../../core/utils/extensions/extensions.dart';
+import '../../../core/utils/extensions/build_context_extensions.dart';
 import '../../../core/utils/styles/styles.dart';
 import '../../../core/widgets/animation/delayed_animation.dart';
 import '../../../core/widgets/button/auth_button.dart';

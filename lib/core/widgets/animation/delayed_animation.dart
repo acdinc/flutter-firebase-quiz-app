@@ -12,7 +12,8 @@ class DelayedAnimation extends StatefulWidget {
   State<DelayedAnimation> createState() => _DelayedAnimationState();
 }
 
-class _DelayedAnimationState extends State<DelayedAnimation> with TickerProviderStateMixin {
+class _DelayedAnimationState extends State<DelayedAnimation>
+    with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animOffset;
 

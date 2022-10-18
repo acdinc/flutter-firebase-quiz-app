@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../extensions/extensions.dart';
+import '../extensions/build_context_extensions.dart';
 
 class Styles {
   Styles._();
@@ -35,4 +35,66 @@ class Styles {
       DeviceOrientation.portraitDown,
     ]);
   }
+
+  static SystemUiOverlayStyle homeSystemUiOverlayStyle() {
+    return const SystemUiOverlayStyle(
+      statusBarColor: Styles.transparentColor,
+      statusBarIconBrightness: Brightness.dark,
+      statusBarBrightness: Brightness.light,
+    );
+  }
+
+  static BoxDecoration homeAppBarBoxDecoration(BuildContext context) {
+    return BoxDecoration(
+      color: context.colorScheme.onPrimary,
+      borderRadius: const BorderRadius.vertical(
+        bottom: Radius.circular(Styles.defaultRadius * 3),
+      ),
+      boxShadow: const [BoxShadow(color: Styles.black12, blurRadius: 8)],
+    );
+  }
+
+  static BoxDecoration homeBottomNavBarBoxDecoration(BuildContext context) {
+    return BoxDecoration(
+      color: context.colorScheme.onPrimary,
+      borderRadius: const BorderRadius.vertical(
+        top: Radius.circular(Styles.defaultRadius * 2),
+      ),
+      boxShadow: const [BoxShadow(color: Styles.black12, blurRadius: 8)],
+    );
+  }
+
+  static BoxDecoration quizCardBoxDecoration(BuildContext context) {
+    return BoxDecoration(
+      color: context.colorScheme.onPrimary,
+      borderRadius: BorderRadius.circular(Styles.defaultRadius),
+      boxShadow: [
+        BoxShadow(
+          blurRadius: 2,
+          color: context.theme.disabledColor.withOpacity(0.06),
+          offset: const Offset(0, 1),
+        )
+      ],
+    );
+  }
+
+  static BoxDecoration topicCardBoxDecoration(BuildContext context) {
+    return BoxDecoration(
+      color: context.colorScheme.onPrimary,
+      borderRadius: BorderRadius.circular(Styles.defaultRadius * 1.5),
+      boxShadow: const [
+        BoxShadow(
+          blurRadius: 1,
+          color: Styles.black12,
+          offset: Offset(0, 1),
+        ),
+      ],
+    );
+  }
+
+  static EdgeInsetsGeometry get quizCardContentPadding =>
+      const EdgeInsets.symmetric(
+        horizontal: Styles.defaultPadding,
+        vertical: Styles.defaultPadding / 3,
+      );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/extensions/extensions.dart';
+import '../../utils/extensions/build_context_extensions.dart';
 import '../../utils/styles/styles.dart';
 
 class AuthButton extends StatelessWidget {

@@ -24,7 +24,8 @@ void main() {
                 ProviderScope(
                   overrides: [
                     firebaseAuthProvider.overrideWithValue(MockFirebaseAuth()),
-                    firestoreProvider.overrideWithValue(FakeFirebaseFirestore()),
+                    firestoreProvider
+                        .overrideWithValue(FakeFirebaseFirestore()),
                   ],
                   child: const MyAwesomeApp(),
                 ),
@@ -52,7 +53,8 @@ void main() {
           await tester.pumpWidget(
             ProviderScope(
               overrides: [
-                firebaseAuthProvider.overrideWithValue(MockFirebaseAuth(signedIn: true)),
+                firebaseAuthProvider
+                    .overrideWithValue(MockFirebaseAuth(signedIn: true)),
                 firestoreProvider.overrideWithValue(FakeFirebaseFirestore()),
               ],
               child: const MyAwesomeApp(),

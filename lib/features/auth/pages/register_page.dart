@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../core/utils/extensions/extensions.dart';
+import '../../../core/utils/extensions/build_context_extensions.dart';
 import '../../../core/utils/styles/styles.dart';
 import '../widgets/register_button.dart';
 import '../widgets/register_text.dart';

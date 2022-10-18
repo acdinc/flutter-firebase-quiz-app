@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../core/utils/extensions/extensions.dart';
+import '../../../core/utils/extensions/build_context_extensions.dart';
 import '../../../core/utils/styles/styles.dart';
 import '../../../core/widgets/animation/delayed_animation.dart';
 

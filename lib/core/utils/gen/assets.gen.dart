@@ -10,6 +10,26 @@
 import 'package:flutter/widgets.dart';
 import 'package:lottie/lottie.dart';
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/ataturk-ilkeleri-ve-inkilap-tarihi.png
+  AssetGenImage get ataturkIlkeleriVeInkilapTarihi => const AssetGenImage(
+      'assets/images/ataturk-ilkeleri-ve-inkilap-tarihi.png');
+
+  /// File path: assets/images/cografya.png
+  AssetGenImage get cografya =>
+      const AssetGenImage('assets/images/cografya.png');
+
+  /// File path: assets/images/yabanci-dil.png
+  AssetGenImage get yabanciDil =>
+      const AssetGenImage('assets/images/yabanci-dil.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [ataturkIlkeleriVeInkilapTarihi, cografya, yabanciDil];
+}
+
 class $AssetsLottieGen {
   const $AssetsLottieGen();
 
@@ -28,6 +48,7 @@ class $AssetsLottieGen {
 class Assets {
   Assets._();
 
+  static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsLottieGen lottie = $AssetsLottieGen();
 }
 
