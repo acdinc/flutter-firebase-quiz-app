@@ -33,6 +33,10 @@ class $AssetsImagesGen {
 class $AssetsLottieGen {
   const $AssetsLottieGen();
 
+  /// File path: assets/lottie/congrats.json
+  LottieGenImage get congrats =>
+      const LottieGenImage('assets/lottie/congrats.json');
+
   /// File path: assets/lottie/error_page_not_found.json
   LottieGenImage get errorPageNotFound =>
       const LottieGenImage('assets/lottie/error_page_not_found.json');
@@ -42,7 +46,8 @@ class $AssetsLottieGen {
       const LottieGenImage('assets/lottie/loading_circle_colorful.json');
 
   /// List of all assets
-  List<LottieGenImage> get values => [errorPageNotFound, loadingCircleColorful];
+  List<LottieGenImage> get values =>
+      [congrats, errorPageNotFound, loadingCircleColorful];
 }
 
 class Assets {

@@ -34,7 +34,7 @@ A new end-to-end Flutter project with firebase and riverpod
 * [x] Add Firebase to the project
 * [x] Create Firebase Services module and add auth service
 * [x] Auth feature
-* [ ] Home, Topic, Quiz features
+* [x] Home, Topic, Quiz features
 * [ ] Settings feature
 * [ ] App navigation
 * [ ] App localization

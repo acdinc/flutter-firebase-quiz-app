@@ -28,7 +28,7 @@ class TopicDetailsPage extends StatelessWidget {
           CustomText.topicDetailsTitle(topic.text!, context)
               .padding(0, 32, 0, 16),
           CustomText.topicDetailsSubTitle(
-            'Weight of this topic in the exam is %${topic.percent}',
+            'Bu konunun sınavdaki ağırlığı: %${topic.percent}',
             context,
           ),
           _Quizzes(quizzes: topic.quizzes ?? []).expanded(),
