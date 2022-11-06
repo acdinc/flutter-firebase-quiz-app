@@ -21,9 +21,11 @@ dependencies:
 
   # core utilities
   freezed_annotation: ^2.2.0
+  in_app_review: ^2.0.4
   json_annotation: ^4.7.0
+  share_plus: ^6.2.0
 
-  # ui
+  # ui utilities
   cupertino_icons: ^1.0.2
   flutter_staggered_animations: ^1.1.1
   lottie: ^1.4.3
@@ -50,7 +52,6 @@ flutter_gen:
     lottie: true
 
 flutter:
-
   uses-material-design: true
 
   assets:

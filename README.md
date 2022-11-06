@@ -35,7 +35,7 @@ A new end-to-end Flutter project with firebase and riverpod
 * [x] Create Firebase Services module and add auth service
 * [x] Auth feature
 * [x] Home, Topic, Quiz features
-* [ ] Settings feature
+* [x] Settings feature
 * [ ] App navigation
 * [ ] App localization
 * [ ] App themes
@@ -47,7 +47,7 @@ Ali Dinc - [@acdinc](https://twitter.com/acdinc) - alcmdnc@gmail.com
 
 [version_badge]: https://img.shields.io/badge/version-0.0.1-orange
 
-[flutter_badge]: https://img.shields.io/badge/flutter-3.3.4-blue
+[flutter_badge]: https://img.shields.io/badge/flutter-3.3.7-blue
 [flutter_link]: https://flutter.dev/
 
 [vga_badge]:https://img.shields.io/badge/style-very_good_analysis-B22C89.svg

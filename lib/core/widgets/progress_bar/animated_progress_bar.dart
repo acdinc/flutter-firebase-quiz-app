@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../utils/extensions/build_context_extensions.dart';
-import '../../utils/func/functions.dart';
+import '../../utils/helper/functions.dart';
 import '../../utils/styles/styles.dart';
 
 class AnimatedProgressbar extends StatelessWidget {

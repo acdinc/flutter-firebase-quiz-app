@@ -4,6 +4,7 @@ abstract class IFirebaseAuthService {
   Stream<User?> streamUser();
   Future<User?> anonSignIn();
   Future<void> signOut();
+  Future<void> deleteAccount();
 }
 
 class FirebaseAuthService implements IFirebaseAuthService {
@@ -17,9 +18,12 @@ class FirebaseAuthService implements IFirebaseAuthService {
   Stream<User?> streamUser() => _auth.authStateChanges();
 
   @override
-  // ignore: lines_longer_than_80_chars
-  Future<User?> anonSignIn() => _auth.signInAnonymously().then((cred) => cred.user);
+  Future<User?> anonSignIn() =>
+      _auth.signInAnonymously().then((cred) => cred.user);
 
   @override
   Future<void> signOut() async => _auth.signOut();
+
+  @override
+  Future<void> deleteAccount() async => _auth.currentUser?.delete();
 }

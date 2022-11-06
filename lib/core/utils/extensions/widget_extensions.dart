@@ -22,6 +22,9 @@ extension WidgetExtension on Widget {
 
   PreferredSize preferredSize(Size preferredSize) =>
       PreferredSize(preferredSize: preferredSize, child: this);
+
+  GestureDetector onTap(VoidCallback onTap) =>
+      GestureDetector(onTap: onTap, child: this);
 }
 
 extension HeroExtension on Image {

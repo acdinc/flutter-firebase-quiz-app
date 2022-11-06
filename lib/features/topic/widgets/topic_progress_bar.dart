@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/utils/extensions/build_context_extensions.dart';
 import '../../../core/utils/extensions/widget_extensions.dart';
-import '../../../core/utils/func/functions.dart';
+import '../../../core/utils/helper/functions.dart';
 import '../../../core/widgets/progress_bar/animated_progress_bar.dart';
 import '../../auth/providers/user_providers.dart';
 import '../model/topic/topic_model.dart';
