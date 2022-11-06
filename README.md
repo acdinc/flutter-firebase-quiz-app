@@ -6,7 +6,17 @@
 [![style: very good analysis][vga_badge]][vga_link]
 ![license: MIT][license_badge]
 
-A new end-to-end Flutter project with firebase and riverpod
+I am sharing the codes by updating the quiz application that I published before and earned me money. I hope it will be useful for those who are considering a similar application.
+
+## Screenshots
+
+<img src="store/screenshots/ss_register_page.png" height="300" alt="register_page"/>
+<img src="store/screenshots/ss_home_topics_page.png" height="300" alt="home_topics_page"/>
+<img src="store/screenshots/ss_topic_detail_page.png" height="300" alt="topic_detail_page"/>
+<img src="store/screenshots/ss_quiz_start_page.png" height="300" alt="quiz_start_page"/>
+<img src="store/screenshots/ss_quiz_question_page.png" height="300" alt="quiz_question_page"/>
+<img src="store/screenshots/ss_quiz_end_page.png" height="300" alt="quiz_end_page"/>
+<img src="store/screenshots/ss_home_settings_page.png" height="300" alt="home_settings_page"/>
 
 ## Architecture and Folder Structure
 
