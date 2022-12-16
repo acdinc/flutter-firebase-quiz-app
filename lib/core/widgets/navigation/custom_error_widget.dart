@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/gen/assets.gen.dart';
@@ -41,7 +42,7 @@ class CustomErrorWidget extends StatelessWidget {
 
   OutlinedButton _button(BuildContext context) {
     return OutlinedButton(
-      onPressed: buttonPressed ?? () => Navigator.pop(context),
+      onPressed: buttonPressed ?? context.router.pop,
       child: Text(buttonText ?? 'Back'),
     );
   }

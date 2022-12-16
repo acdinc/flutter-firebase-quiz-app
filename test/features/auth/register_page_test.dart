@@ -22,7 +22,7 @@ void main() {
                 firebaseAuthProvider.overrideWithValue(MockFirebaseAuth()),
                 firestoreProvider.overrideWithValue(FakeFirebaseFirestore()),
               ],
-              child: const MyAwesomeApp(),
+              child: MyAwesomeApp(),
             ),
           );
 

@@ -1,3 +1,6 @@
+// ignore_for_file: unawaited_futures
+
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -50,14 +53,13 @@ class FinishQuizController extends StateNotifier<AsyncValue<void>> {
           solvedQuizzes: newSolvedQuizzes,
         );
 
-        // ignore: unawaited_futures
         _service.update(newUser);
 
         CustomLogger.log('finishQuiz: user data updated --> ${newUser.id}');
       }
 
-      Navigator.pop(context);
-      Navigator.pop(context);
+      context.router.pop();
+      context.router.pop();
     });
   }
 }

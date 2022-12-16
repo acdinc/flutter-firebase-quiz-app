@@ -1,11 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
+import '../../../config/router/app_router.dart';
 import '../../../core/utils/extensions/build_context_extensions.dart';
 import '../../../core/utils/extensions/widget_extensions.dart';
 import '../../../core/utils/styles/styles.dart';
 import '../../../core/widgets/text/custom_text.dart';
 import '../../quiz/models/quiz/quiz_model.dart';
-import '../../quiz/pages/quiz_page.dart';
 import '../model/topic/topic_model.dart';
 import '../widgets/quiz_card.dart';
 import '../widgets/topic_details_app_bar.dart';
@@ -58,19 +59,10 @@ class _Quizzes extends StatelessWidget {
         return quiz == null
             ? Styles.emptyWidget
             : GestureDetector(
-                onTap: () => _navigateToQuizPage(context, quiz.id!),
+                onTap: () => context.router.push(QuizRoute(id: quiz.id!)),
                 child: QuizCard(index: index, quiz: quiz),
               );
       },
-    );
-  }
-
-  void _navigateToQuizPage(BuildContext context, String quizId) {
-    Navigator.push(
-      context,
-      MaterialPageRoute<void>(
-        builder: (context) => QuizPage(id: quizId),
-      ),
     );
   }
 }

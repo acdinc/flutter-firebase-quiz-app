@@ -10,13 +10,7 @@ I am sharing the codes by updating the quiz application that I published before 
 
 ## Screenshots
 
-<img src="store/screenshots/ss_register_page.png" height="300" alt="register_page"/>
-<img src="store/screenshots/ss_home_topics_page.png" height="300" alt="home_topics_page"/>
-<img src="store/screenshots/ss_topic_detail_page.png" height="300" alt="topic_detail_page"/>
-<img src="store/screenshots/ss_quiz_start_page.png" height="300" alt="quiz_start_page"/>
-<img src="store/screenshots/ss_quiz_question_page.png" height="300" alt="quiz_question_page"/>
-<img src="store/screenshots/ss_quiz_end_page.png" height="300" alt="quiz_end_page"/>
-<img src="store/screenshots/ss_home_settings_page.png" height="300" alt="home_settings_page"/>
+<img src="store/screenshots/ss_register_page.png" height="350" alt="register_page"/> <img src="store/screenshots/ss_home_topics_page.png" height="350" alt="home_topics_page"/> <img src="store/screenshots/ss_topic_detail_page.png" height="350" alt="topic_detail_page"/> <img src="store/screenshots/ss_quiz_start_page.png" height="350" alt="quiz_start_page"/> <img src="store/screenshots/ss_quiz_question_page.png" height="350" alt="quiz_question_page"/> <img src="store/screenshots/ss_home_settings_page.png" height="350" alt="home_settings_page"/>
 
 ## Architecture and Folder Structure
 
@@ -46,7 +40,7 @@ I am sharing the codes by updating the quiz application that I published before 
 * [x] Auth feature
 * [x] Home, Topic, Quiz features
 * [x] Settings feature
-* [ ] App navigation
+* [x] App navigation
 * [ ] App localization
 * [ ] App themes
 

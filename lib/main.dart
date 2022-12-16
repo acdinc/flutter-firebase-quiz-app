@@ -27,7 +27,7 @@ Future<void> main() async {
   runApp(
     ProviderScope(
       observers: [AppProviderObserver()],
-      child: const MyAwesomeApp(),
+      child: MyAwesomeApp(),
     ),
   );
 }

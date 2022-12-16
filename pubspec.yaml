@@ -19,6 +19,9 @@ dependencies:
   # state management and service locator
   flutter_riverpod: ^2.0.2
 
+  # navigation
+  auto_route: ^5.0.4
+
   # core utilities
   freezed_annotation: ^2.2.0
   in_app_review: ^2.0.4
@@ -36,6 +39,7 @@ dev_dependencies:
     sdk: flutter
 
   # development
+  auto_route_generator: ^5.0.3
   build_runner: ^2.3.0
   fake_cloud_firestore: ^1.3.2
   firebase_auth_mocks: ^0.8.6

@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/utils/styles/styles.dart';
@@ -52,7 +53,7 @@ class ModalBottomSheetContent extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: Styles.defaultPadding * 2),
       child: ElevatedButton(
         style: _buttonStyle(isCorrect),
-        onPressed: () => Navigator.pop(context, isCorrect),
+        onPressed: () => context.router.pop(isCorrect),
         child: Text(
           isCorrect ? 'Devam Et' : 'Tekrar Dene',
         ),

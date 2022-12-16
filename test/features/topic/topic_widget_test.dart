@@ -26,7 +26,7 @@ void main() {
           overrides: [
             firebaseAuthProvider.overrideWithValue(firebaseAuth),
           ],
-          child: const MyAwesomeApp(),
+          child: MyAwesomeApp(),
         ),
       );
 

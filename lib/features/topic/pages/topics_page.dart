@@ -1,14 +1,15 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
+import '../../../config/router/app_router.dart';
 import '../../../core/utils/styles/styles.dart';
 import '../../../core/widgets/navigation/custom_error_widget.dart';
 import '../../../core/widgets/navigation/custom_loading_widget.dart';
 import '../model/topic/topic_model.dart';
 import '../providers/topic_providers.dart';
 import '../widgets/topic_card.dart';
-import 'topic_details_page.dart';
 
 class TopicsPage extends ConsumerStatefulWidget {
   const TopicsPage({super.key});
@@ -76,7 +77,8 @@ class _Body extends StatelessWidget {
           child: Consumer(
             builder: (context, ref, child) {
               return GestureDetector(
-                onTap: () => _navigateToTopicDetailsPage(context, topic),
+                onTap: () =>
+                    context.router.push(TopicDetailsRoute(topic: topic)),
                 child: TopicCard(topic: topic),
               );
             },
@@ -91,15 +93,6 @@ class _Body extends StatelessWidget {
       crossAxisCount: 2,
       crossAxisSpacing: padding,
       mainAxisSpacing: padding,
-    );
-  }
-
-  void _navigateToTopicDetailsPage(BuildContext context, TopicModel topic) {
-    Navigator.push(
-      context,
-      MaterialPageRoute<void>(
-        builder: (context) => TopicDetailsPage(topic: topic),
-      ),
     );
   }
 }

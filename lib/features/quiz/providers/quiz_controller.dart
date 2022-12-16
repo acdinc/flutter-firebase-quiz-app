@@ -5,14 +5,12 @@ import '../../../core/utils/styles/styles.dart';
 import '../models/option/option_model.dart';
 
 class QuizController extends StateNotifier<OptionModel?> {
-  QuizController()
-      : _controller = PageController(),
-        super(null);
+  QuizController() : super(null);
 
-  late final PageController _controller;
+  final PageController _controller = PageController();
   OptionModel? _selected;
 
-  PageController get controller => _controller;
+  PageController? get controller => _controller;
   OptionModel? get selected => _selected;
   bool get isFirstQuestion => _controller.page == 0;
 

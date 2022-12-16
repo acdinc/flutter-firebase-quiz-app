@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'features/auth/pages/splash_page.dart';
+import 'config/router/app_router.dart';
 
 class MyAwesomeApp extends StatelessWidget {
-  const MyAwesomeApp({super.key});
+  MyAwesomeApp({super.key});
+
+  final _appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
       title: 'Quiz App',
-      home: SplashPage(),
+      routerDelegate: _appRouter.delegate(),
+      routeInformationParser: _appRouter.defaultRouteParser(),
     );
   }
 }

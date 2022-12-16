@@ -27,7 +27,7 @@ void main() {
                     firestoreProvider
                         .overrideWithValue(FakeFirebaseFirestore()),
                   ],
-                  child: const MyAwesomeApp(),
+                  child: MyAwesomeApp(),
                 ),
               );
 
@@ -57,7 +57,7 @@ void main() {
                     .overrideWithValue(MockFirebaseAuth(signedIn: true)),
                 firestoreProvider.overrideWithValue(FakeFirebaseFirestore()),
               ],
-              child: const MyAwesomeApp(),
+              child: MyAwesomeApp(),
             ),
           );
 

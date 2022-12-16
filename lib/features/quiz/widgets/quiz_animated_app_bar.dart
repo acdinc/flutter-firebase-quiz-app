@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,7 +18,6 @@ class QuizAnimatedAppBar extends ConsumerWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
-    final controller = ref.read(quizControllerProvider.notifier);
 
     return AppBar(
       title: DecoratedBox(
@@ -29,14 +29,18 @@ class QuizAnimatedAppBar extends ConsumerWidget with PreferredSizeWidget {
           Icons.adaptive.arrow_back,
           color: context.theme.disabledColor,
         ),
-        onPressed: () => controller.isFirstQuestion
-            ? Navigator.pop(context)
-            : controller.previousPage(),
+        onPressed: () {
+          final controller = ref.read(quizControllerProvider.notifier);
+
+          controller.isFirstQuestion
+              ? context.router.pop()
+              : controller.previousPage();
+        },
       ),
       actions: [
         IconButton(
           icon: Icon(Icons.close, color: context.theme.disabledColor),
-          onPressed: () => Navigator.pop(context),
+          onPressed: context.router.pop,
         ),
         const SizedBox(width: 4),
       ],
